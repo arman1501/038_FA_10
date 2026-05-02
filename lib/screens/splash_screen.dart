@@ -10,60 +10,46 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          // Full screen watercolor background
           const Positioned.fill(
             child: WatercolorBackground(fullScreen: true),
           ),
-          // Content
           SafeArea(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
+              children: [  // crossAxisAlignment সরিয়ে দিন
                 const Spacer(flex: 3),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 32),
+                // Center যোগ করুন
+                const Center(
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text(
+                      Text(
                         'Welcome Back',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 28,
                           fontWeight: FontWeight.bold,
-                          letterSpacing: 0.3,
                         ),
                       ),
-                      const SizedBox(height: 8),
-                      const Text(
+                      SizedBox(height: 8),
+                      Text(
                         'Enter your details',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                          fontWeight: FontWeight.w400,
-                        ),
+                        style: TextStyle(color: Colors.white, fontSize: 16),
                       ),
                     ],
                   ),
                 ),
                 const Spacer(flex: 2),
                 Padding(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 32,
-                    vertical: 32,
-                  ),
+                  padding:
+                  const EdgeInsets.symmetric(horizontal: 32, vertical: 32),
                   child: SizedBox(
                     width: double.infinity,
                     height: 52,
                     child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (_) => const SignInScreen(),
-                          ),
-                        );
-                      },
+                      onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (_) => const SignInScreen()),
+                      ),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.white.withOpacity(0.25),
                         foregroundColor: Colors.white,
@@ -75,9 +61,7 @@ class SplashScreen extends StatelessWidget {
                       child: const Text(
                         'Next',
                         style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w600,
-                        ),
+                            fontSize: 16, fontWeight: FontWeight.w600),
                       ),
                     ),
                   ),

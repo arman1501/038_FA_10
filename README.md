@@ -1,21 +1,21 @@
 # ID_FA_10 — Flutter Authentication UI
 
-A Flutter application implementing a purple watercolor-themed authentication flow.
+A Flutter application implementing a purple watercolor-themed authentication flow based on provided UI mockups.
 
 ## Screens
 
-| Screen | Description |
-|--------|-------------|
-| **Splash / Welcome Back** | Full-screen watercolor background with wave decorations and a "Next" button |
-| **Sign In** | Email & password fields with purple watercolor header |
-| **Sign Up** | Email, password & confirm password fields with purple watercolor header |
-| **Home** | Post-authentication success screen |
+| Screen | File | Description |
+|--------|------|-------------|
+| Welcome Back | `splash_screen.dart` | Full-screen watercolor BG + Next button |
+| Sign In | `signin_screen.dart` | Email & password login |
+| Sign Up | `signup_screen.dart` | Email, password & confirm register |
+| Home | `home_screen.dart` | Post-authentication screen |
 
 ## Design
 
-- **Theme**: Purple watercolor paint splash aesthetic
-- **Primary Color**: `#6B3FA0`
-- **Background**: Custom `CustomPainter` rendering watercolor washes, paint splatter dots, and concentric wave line art on both sides
+- **Primary color**: `#6B3FA0` (deep purple)
+- **Background**: Custom `CustomPainter` with gradient, paint splatter dots, wash patches, and concentric wave lines
+- **Navigation**: Splash → Sign In ↔ Sign Up → Home
 
 ## Getting Started
 
@@ -24,7 +24,4 @@ flutter pub get
 flutter run
 ```
 
-## Requirements
-
-- Flutter SDK ≥ 3.10.0
-- Dart SDK ≥ 3.0.0
+Requires Flutter SDK ≥ 3.10.0 and Dart ≥ 3.0.0.

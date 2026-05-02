@@ -11,10 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Auth App',
+      title: 'ID FA 10',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF6B3FA0)),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF6B3FA0),
+        ),
         useMaterial3: true,
       ),
       home: const SplashScreen(),
