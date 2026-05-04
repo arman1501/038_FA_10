@@ -1,27 +1,63 @@
-# ID_FA_10 — Flutter Authentication UI
+# Purple Auth Flow — Flutter UI
 
-A Flutter application implementing a purple watercolor-themed authentication flow based on provided UI mockups.
+A modern Flutter authentication UI built with a purple watercolour-inspired design.
+This project focuses on creating a visually appealing and smooth user authentication experience.
+
+## Key Features
+
+* Simple and user-friendly authentication flow
+* Custom-designed background using `CustomPainter`
+* Smooth screen transitions
+* Adaptive layout for multiple screen sizes
+
+## Navigation Flow
+
+* Welcome → Sign In
+* Sign In ↔ Sign Up
+* Successful login → Home
 
 ## Screens
 
-| Screen | File | Description |
-|--------|------|-------------|
-| Welcome Back | `splash_screen.dart` | Full-screen watercolor BG + Next button |
-| Sign In | `signin_screen.dart` | Email & password login |
-| Sign Up | `signup_screen.dart` | Email, password & confirm register |
-| Home | `home_screen.dart` | Post-authentication screen |
+* **Welcome Screen** (`splash_screen.dart`)
 
-## Design
+  * Full-screen styled background
+  * Entry point of the app
 
-- **Primary color**: `#6B3FA0` (deep purple)
-- **Background**: Custom `CustomPainter` with gradient, paint splatter dots, wash patches, and concentric wave lines
-- **Navigation**: Splash → Sign In ↔ Sign Up → Home
+* **Sign In Screen** (`signin_screen.dart`)
 
-## Getting Started
+  * Email and password input interface
+
+* **Sign Up Screen** (`signup_screen.dart`)
+
+  * Registration with password confirmation
+
+* **Home Screen** (`home_screen.dart`)
+
+  * Main dashboard after authentication
+
+## Design Specifications
+
+* Primary Color: `#6B3FA0` (Purple tone)
+* Background rendering via Flutter `CustomPainter`
+* Visual elements include gradients, paint splashes, and layered wave patterns
+
+## Installation & Run
+
+Execute the following commands:
 
 ```bash
 flutter pub get
 flutter run
 ```
 
-Requires Flutter SDK ≥ 3.10.0 and Dart ≥ 3.0.0.
+## System Requirements
+
+* Flutter SDK ≥ 3.10.0
+* Dart SDK ≥ 3.0.0
+
+## Author Information
+
+© 2026 Md. Arman Hussan | Student ID: 0182410012101038 | Section: 63A
+
+This project is developed for academic purposes.
+Copying without proper modification is strongly discouraged.
